@@ -6,7 +6,7 @@ import javax.swing.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Mi aplicacion de login"); //Intanciado
+        JFrame frame = new JFrame("Mi Calculadora Avanzada"); //Intanciado
         frame.setContentPane(new CalculadoraC().calculadora);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Cerrar procesos
         frame.setSize(20000, 1000);
