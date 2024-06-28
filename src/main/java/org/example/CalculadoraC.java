@@ -10,12 +10,12 @@ public class CalculadoraC {
     private JTextField Numero1;
     private JTextField Numero2;
     public JPanel calculadora;
-    private JButton Suma;
-    private JButton Resta;
-    private JButton Multiplicacion;
-    private JButton division;
-    private JButton potencia;
-    private JButton raiz;
+    public JButton Suma;
+    public JButton Resta;
+    public JButton Multiplicacion;
+    public JButton division;
+    public JButton potencia;
+    public JButton raiz;
     private JButton seno;
     private JButton coseno;
     private JLabel Resultado;
@@ -25,7 +25,7 @@ public class CalculadoraC {
 
     public CalculadoraC() {
 
-        //operciones Basicas
+        //Operciones Basicas
         Suma.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -74,7 +74,7 @@ public class CalculadoraC {
                     JOptionPane.showMessageDialog(null, "División por cero no es posible.");
                 } else {
                     double div = num1 / num2;
-                    Respuesta.setText(String.format("%.2f", div));
+                    Respuesta.setText(String.format("%.3f", div));
                 }
 
 
@@ -99,7 +99,7 @@ public class CalculadoraC {
                 double num2 = Double.parseDouble(numero2);
                 Numero1.setText("Raiz-cuadrada()");
                 double raizCuadrada = Math.sqrt(num2);
-                Respuesta.setText(String.format("%.2f", raizCuadrada));
+                Respuesta.setText(String.format("%.3f", raizCuadrada));
 
             }
         });
