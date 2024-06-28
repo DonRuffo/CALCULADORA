@@ -31,7 +31,7 @@ public class CalculadoraC {
                 double num2=new Double(numero2).doubleValue();
                 Numero1.setText("Sen()");
                 double seno = Math.sin(num2);
-                String senoStr = String.format("%.2f", seno);
+                String senoStr = String.format("%.3f", seno);
                 Respuesta.setText(String.valueOf(senoStr));
             }
         });
@@ -43,7 +43,7 @@ public class CalculadoraC {
                 double num2=new Double(numero2).doubleValue();
                 Numero1.setText("Cos()");
                 double coseno = Math.cos(num2);
-                String cosenoStr = String.format("%.2f", coseno);
+                String cosenoStr = String.format("%.3f", coseno);
                 Respuesta.setText(String.valueOf(cosenoStr));
             }
         });
@@ -54,7 +54,7 @@ public class CalculadoraC {
                 double num2=new Double(numero2).doubleValue();
                 Numero1.setText("Tan()");
                 double tangente = Math.tan(num2);
-                String tangenteStr = String.format("%.2f", tangente);
+                String tangenteStr = String.format("%.3f", tangente);
                 Respuesta.setText(String.valueOf(tangenteStr));
             }
         });
