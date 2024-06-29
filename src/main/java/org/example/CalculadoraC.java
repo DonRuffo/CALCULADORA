@@ -35,7 +35,6 @@ public class CalculadoraC {
                 double num2 = Double.parseDouble(numero2);
                 double suma = num1 + num2;
                 Respuesta.setText(String.format("%.2f", suma));
-
             }
         });
         Resta.addActionListener(new ActionListener() {
@@ -74,7 +73,7 @@ public class CalculadoraC {
                     JOptionPane.showMessageDialog(null, "División por cero no es posible.");
                 } else {
                     double div = num1 / num2;
-                    Respuesta.setText(String.format("%.3f", div));
+                    Respuesta.setText(String.format("%.2f", div));
                 }
 
 
@@ -99,8 +98,7 @@ public class CalculadoraC {
                 double num2 = Double.parseDouble(numero2);
                 Numero1.setText("Raiz-cuadrada()");
                 double raizCuadrada = Math.sqrt(num2);
-                Respuesta.setText(String.format("%.3f", raizCuadrada));
-
+                Respuesta.setText(String.format("%.2f", raizCuadrada));
             }
         });
 
