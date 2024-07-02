@@ -10,12 +10,12 @@ public class CalculadoraC {
     private JTextField Numero1;
     private JTextField Numero2;
     public JPanel calculadora;
-    private JButton Suma;
-    private JButton Resta;
-    private JButton Multiplicacion;
-    private JButton division;
-    private JButton potencia;
-    private JButton raiz;
+    public JButton Suma;
+    public JButton Resta;
+    public JButton Multiplicacion;
+    public JButton division;
+    public JButton potencia;
+    public JButton raiz;
     private JButton seno;
     private JButton coseno;
     private JLabel Resultado;
@@ -25,7 +25,7 @@ public class CalculadoraC {
 
     public CalculadoraC() {
 
-        //operciones Basicas
+        //Operciones Basicas
         Suma.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -35,7 +35,6 @@ public class CalculadoraC {
                 double num2 = Double.parseDouble(numero2);
                 double suma = num1 + num2;
                 Respuesta.setText(String.format("%.2f", suma));
-
             }
         });
         Resta.addActionListener(new ActionListener() {
@@ -100,7 +99,6 @@ public class CalculadoraC {
                 Numero1.setText("Raiz-cuadrada()");
                 double raizCuadrada = Math.sqrt(num2);
                 Respuesta.setText(String.format("%.2f", raizCuadrada));
-
             }
         });
 
@@ -111,7 +109,7 @@ public class CalculadoraC {
                 double num2=new Double(numero2).doubleValue();
                 Numero1.setText("Sen()");
                 double seno = Math.sin(num2);
-                String senoStr = String.format("%.3f", seno);
+                String senoStr = String.format("%.2f", seno);
                 Respuesta.setText(String.valueOf(senoStr));
             }
         });
@@ -123,7 +121,7 @@ public class CalculadoraC {
                 double num2=new Double(numero2).doubleValue();
                 Numero1.setText("Cos()");
                 double coseno = Math.cos(num2);
-                String cosenoStr = String.format("%.3f", coseno);
+                String cosenoStr = String.format("%.2f", coseno);
                 Respuesta.setText(String.valueOf(cosenoStr));
             }
         });
@@ -134,7 +132,7 @@ public class CalculadoraC {
                 double num2=new Double(numero2).doubleValue();
                 Numero1.setText("Tan()");
                 double tangente = Math.tan(num2);
-                String tangenteStr = String.format("%.3f", tangente);
+                String tangenteStr = String.format("%.2f", tangente);
                 Respuesta.setText(String.valueOf(tangenteStr));
             }
         });
