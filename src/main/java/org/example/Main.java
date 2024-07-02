@@ -12,5 +12,7 @@ public class Main {
         frame.setSize(20000, 1000);
         frame.pack();
         frame.setVisible(true);
+
+        System.out.println("Indicame si esto vale");
     }
 }
